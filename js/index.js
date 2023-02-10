@@ -1,16 +1,10 @@
-import {Router} from './router.js'
-const router = new Router()
-router.add('/' = 'pages/home.html')
-router.add('/exploracao' = 'pages/exploracao.html')
-router.add('/universo' = 'pages/universo.html')
-router.add(404 = 'pages/404.html')
+import {Route} from './router.js'
+const router = new Route()
+router.add('/' , 'pages/home.html')
+router.add('/exploracao' , 'pages/exploracao.html')
+router.add('/universo' , 'pages/universo.html')
+router.add(404 , 'pages/404.html')
 
-// const routes = {
-//     '/': 'pages/home.html',
-//     '/exploracao': 'pages/exploracao.html',
-//     '/universo': 'pages/universo.html',
-//     404: 'pages/404.html',
-// }
 
 router.handle()
 
